@@ -1,0 +1,5 @@
+- name: ping the server
+  hostes: frontend #target server
+  tasks: #tasks == module == collection
+   -name: ping the server
+   ping:
