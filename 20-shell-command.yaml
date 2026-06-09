@@ -9,7 +9,7 @@
 
   - name: pring out put
     debug:
-      msg:"{{ users_ootput }}"
+      msg:"{{ users_output }}"
 
   - name: list files
    #command: ls -ltr > /tmp/files.txt
