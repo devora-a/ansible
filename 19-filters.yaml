@@ -21,7 +21,6 @@
             "value": "dev"
         }
     ]
-}
 
   tasks:  
     - name: convert sting to list
