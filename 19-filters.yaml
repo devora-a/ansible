@@ -1,0 +1,9 @@
+- name: demo on filters
+  hosts: local
+  connection: local
+  vars:
+    topics: Linux, Shell, Ansible, Terraform
+  tasks:  
+    - name: convert sting to list
+      debug:
+        msg: "Topics acre: {{topics | split(',')}}"
