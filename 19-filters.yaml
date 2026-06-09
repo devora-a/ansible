@@ -7,6 +7,22 @@
       name: Ansible
       project: roboshop
       environment: dev
+    tagList: [
+        {
+            "key": "name",
+            "value": "Ansible"
+        },
+        {
+            "key": "project",
+            "value": "roboshop"
+        },
+        {
+            "key": "environment",
+            "value": "dev"
+        }
+    ]
+}
+
   tasks:  
     - name: convert sting to list
       debug:
@@ -19,3 +35,7 @@
     - name: convert map to list
       debug:
         msg: "{{tagMap | dict2items }}"    
+
+    - name: cnvert list to map
+      debug:
+        msg: "{{tagList | items2dict }}"        
