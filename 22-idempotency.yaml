@@ -1,0 +1,8 @@
+- name: create user
+  become: yes
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: create expense user
+    user:
+      name: expense # useradd expense
