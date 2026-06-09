@@ -8,6 +8,6 @@
       debug:
         msg: "Topics acre: {{topics | split(',')}}"
 
-    - name: set defult value
+    - name: set default value
       debug:
-        msg: "Hi {{ GREETINGS | defult('Good morning')}}"        
+        msg: "Hi {{ GREETINGS | default('Good morning')}}"        
