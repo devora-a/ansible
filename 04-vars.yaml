@@ -1,4 +1,4 @@
-- name: demo on variables
+- name: demo on tasklevel variables
   host: localhost
   connection: local # it will not ask of user name and password
   vars:
@@ -6,5 +6,8 @@
     TRAINER: "shivakumar"
     DURATION: "150hrs"
   task:
+  - name: print information
+    vars:
+      COURSE: "DevsecOps with AIOps"
     debug:
       msg: "Hi, I am learning {{COURSE}}, Trainer is {{TRAINER}}, Duration is {{DURATION}} " 
