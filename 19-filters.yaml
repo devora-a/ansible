@@ -1,5 +1,5 @@
 - name: demo on filters
-  hosts: local host
+  hosts: localhost
   connection: local
   vars:
     topics: Linux, Shell, Ansible, Terraform
