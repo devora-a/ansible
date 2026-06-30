@@ -1,0 +1,24 @@
+- name: demo on data types
+  hosts: local
+  connection: local
+  vars:
+    course: "Devops with AIops" # string
+    duration_in_hrs: 150        #interger or number
+    is_live_sessions: true      #boolen
+    topics:                      #list 
+    - linux
+    - ansible
+    - shell
+    more_details:                #multipul key values is map
+    months: 5                    
+    traner: "shiva"
+  tasks:
+  - name: print info
+    debug:
+     msg: |
+      "course: {{ course }}"
+      "duration: {{ duration_in_hrs}}"
+      "is_live: {{ is_live_sessions}}"
+      "topics: {{ topics }}"
+      "more_details: {{ more_details }}"
+
