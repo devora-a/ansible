@@ -2,7 +2,7 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: install packages
+  - name: install pacakges
     packages:
       name: "{{ item }}"
       state: present
