@@ -2,8 +2,8 @@
   hosts: frontend
   become: yes
   tasks:
-  - name: install pacakges
-    packages:
+  - name: install packages
+    package:
       name: "{{ item }}"
       state: present
     loop:
