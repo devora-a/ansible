@@ -10,8 +10,8 @@
     - ansible
     - shell
     more_details:                #multipul key values is map
-    months: 5                    
-    traner: "shiva"
+     months: 5                    
+     traner: "shiva"
   tasks:
   - name: print info
     debug:
