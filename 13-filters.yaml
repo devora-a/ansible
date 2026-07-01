@@ -23,7 +23,7 @@
     ]
 
   tasks:  
-    - name: convert sting to list
+    - name: convert string to list
       debug:
         msg: "Topics acre: {{topics | split(',')}}"
 
@@ -35,6 +35,6 @@
       debug:
         msg: "{{tagMap | dict2items }}"    
 
-    - name: cnvert list to map
+    - name: convert list to map
       debug:
-        msg: "{{tagList | items2dict }}"        
+        msg: "{{tagList | items2dict }}"   
